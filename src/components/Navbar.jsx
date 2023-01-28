@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* Search Input */}
-      <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
+      <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[600px] lg:w-[500px]">
         <AiOutlineSearch size={25} />
         <input
           className="bg-transparent p-2 focus: outline-none w-full"
@@ -46,7 +46,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {/* Overlay */}
       {nav ? (
-        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0 duration-300"></div>
       ) : (
         ""
       )}
@@ -55,8 +55,8 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-400"
-            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-400"
+            ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300"
+            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300"
         }
       >
         <AiOutlineClose
